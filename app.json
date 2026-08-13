@@ -1,0 +1,69 @@
+{
+  "expo": {
+    "name": "Mat-Haul",
+    "slug": "CharissaticsOrderingApp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/charismat-icon.png",
+    "scheme": "charissaticsorderingapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "bundleIdentifier": "com.charissatics.orderingapp",
+      "supportsTablet": true,
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "softwareKeyboardLayoutMode": "pan",
+      "package": "com.charissatics.orderingapp",
+      "googleServicesFile": "./google-services.json",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "backgroundColor": "#ffffff",
+        "backgroundImage": "./assets/images/launcher_background.png",
+        "foregroundImage": "./assets/images/launcher_foreground.png",
+        "monochromeImage": "./assets/images/launcher_monochrome.png"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/charismat-icon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/charismat-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff",
+          "dark": {
+            "backgroundColor": "#ffffff"
+          }
+        }
+      ],
+      "expo-asset",
+      "expo-font",
+      "expo-secure-store",
+      "expo-web-browser",
+      "@react-native-community/datetimepicker",
+      "expo-notifications"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "5fd02c5b-408f-462a-9145-43c172765c96"
+      }
+    },
+    "owner": "geekcircles"
+  }
+}
